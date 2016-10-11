@@ -54,6 +54,17 @@ document.querySelector("#blow-up button").addEventListener('click',function(){
 
 document.querySelector("#remove button").addEventListener('click',function(){
   // TASK #5
+    var node = document.querySelector("#userList")
+    var listItems = node.children
+  for (var i = 0; i < listItems.length; i ++) {
+    var liNode = listItems[i]
+    if (liNode.classList.contains('inactive')) {
+      node.removeChild(liNode)
+      i--
+    }
+}
+
+
 })
 
 
