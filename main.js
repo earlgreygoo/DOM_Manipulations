@@ -14,9 +14,18 @@ document.querySelector("#double button").addEventListener('click',function(){
 
 document.querySelector("#color-circle button").addEventListener('click',function(){
   // TASK #3
-  var circle = document.querySelector("circle-bw")
-  var circleCol = circle.background 
-  log
+  var circle = document.querySelector("#circle-bw")
+  
+  
+ if (circle.style.background === "black") {
+  	 return circle.style.background = "white"
+ }
+ else {
+ 	return circle.style.background = "black"
+ }
+
+  
+
 
 })
 
