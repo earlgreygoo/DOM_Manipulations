@@ -31,6 +31,25 @@ document.querySelector("#color-circle button").addEventListener('click',function
 
 document.querySelector("#blow-up button").addEventListener('click',function(){
   // TASK #4}
+
+  var redcircle = document.querySelector(".circle-red")
+  rcStyles = window.getComputedStyle(redcircle)
+   
+  var rcwidth = rcStyles.width
+  var doubler = parseInt(rcwidth) * 2
+
+  redcircle.style.width  =  doubler + "px" 
+  redcircle.style.height = doubler + "px"
+
+  if (doubler >= 320) {
+  	
+  	redcircle.style.width  =  "40px"
+   redcircle.style.height = "40px"
+  }
+
+
+
+
 })
 
 document.querySelector("#remove button").addEventListener('click',function(){
