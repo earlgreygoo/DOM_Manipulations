@@ -70,6 +70,13 @@ document.querySelector("#remove button").addEventListener('click',function(){
 
 document.querySelector("#reverse-squares button").addEventListener('click',function(){
   // TASK #6
+  var list = document.querySelector("#reverse-squares .answer-box")
+  var spanobject = list.children
+  for (var i = spanobject.length -1 ; i >= 0; i -- ) {
+  		list.appendChild(spanobject[i])
+  }
+  
+
 })
 
 document.querySelector("#pig-latin button").addEventListener('click',function(){
