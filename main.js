@@ -91,7 +91,17 @@ document.querySelector("#pig-latin button").addEventListener('click',function(){
 
 
 })
-
+var number = 1;
 document.querySelector("#cycle-image button").addEventListener('click',function(){
   // TASK #8
+var cities = document.querySelector("#city-img")
+console.log(cities)
+if(number > 10){
+	number = 0;
+}
+
+cities.src = 'http://lorempixel.com/400/200/city/' + number 
+
+number +=1; 
+
 })
