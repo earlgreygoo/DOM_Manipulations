@@ -81,6 +81,15 @@ document.querySelector("#reverse-squares button").addEventListener('click',funct
 
 document.querySelector("#pig-latin button").addEventListener('click',function(){
   // TASK #7
+  var words = document.querySelector("#tasks")
+  var wordslist = words.children 
+  for(var i = 0; i < wordslist.length; i ++){
+  	stringtoreverse = wordslist[i].innerHTML 
+  	reversedstring = stringtoreverse.split("").reverse().join("")
+  	wordslist[i].innerHTML = reversedstring
+  }
+
+
 })
 
 document.querySelector("#cycle-image button").addEventListener('click',function(){
